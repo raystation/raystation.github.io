@@ -6,5 +6,10 @@ module.exports = function(eleventyConfig) {
   // eleventyConfig.addCollection("photos", function (collection) {
   //   return collection.getFilteredByGlob("photos/*.jpg"); // Adjust the glob pattern as needed
   // });
+  return {
+    dir: {
+      output: "dist"
+    }
+  }
 
 };
