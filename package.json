@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "npx @11ty/eleventy --serve",
-    "start": "npx @11ty/eleventy --serve & npx sass sass:_site/css --watch",
-    "watch:sass": "npx sass sass:_site/css --watch"
+    "start": "npx @11ty/eleventy --serve & npx sass sass:docs/css --watch",
+    "watch:sass": "npx sass sass:docs/css --watch"
   },
   "author": "",
   "license": "ISC"
