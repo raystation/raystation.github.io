@@ -1,0 +1,115 @@
+---
+title: Home
+layout: basic.html
+---
+
+<section class='container noww my-4'>
+  <div class='row'>
+    <div class='col-12'>
+      <hr>
+      <h2>Noww</h2>
+      <ul>
+        <li>Job hunting after being laid-off in March
+        <li>Experimenting with AI Art
+        <li>building an Etsy shop with AI-assisted artworks called <a href='https://www.etsy.com/shop/PromptDesignArt' target='_blank'>Prompt Design Art</a>
+        <li>Tinkering with Emulation. SSBC devices and hacking old devices.
+        <li>Learning Cantonese
+        <li>Learning 11ty
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class='container'>
+  <div class='row'>
+    <div class='col-12'>
+      <hr>
+      <h2>Writings</h2>
+    </div>
+    <div class='col-12 column-count'>
+      <ul>
+        {% for post in collections.blog %}
+        <li><a href='{{ post.url }}'>{{ post.data.title }}</a>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class='col-12 my-2'>
+      <p><a href='/'>see more</a> ></p>
+    </div>
+  </div>
+</section>
+
+<!-- <section class='container'>
+  <div class='row'>
+    <div class='col-12'>
+      <main>
+        <h2>Recent Blog Posts</h2>
+
+        {% for post in collections.post %}
+        <li><a href='{{ post.url }}'>{{ post.data.title }}</a>
+        <p> {{ post.content }} </p>
+        {% endfor %}
+
+
+        <h3>Gaming</h3>
+        {% for post in collections.gaming %}
+        <li><a href='{{ post.url }}'>{{ post.data.title }}</a>
+        <p> {{ post.content }} </p>
+        {% endfor %}
+      </main>
+    </div>
+  </div>
+
+</section> -->
+
+<section class='container photos my-4'>
+  <div class='row'>
+    <div class='col-12'>
+      <hr>
+      <h2>Photography</h2>
+    </div>
+  </div>
+
+<!--   <div class="row">
+    {% for photo in collections.photos.slice(0, 4) %}
+      <img src="{{ photo.url }}" alt="Image">
+    {% endfor %}
+  </div> -->
+
+  <div class='row my-3'>
+    <div class='col-6 mb-4'>
+      <img class='img-fluid' src='photos/2018-02-24-molinari.jpg' srcset='photos/2018-02-24-molinari@2x.jpg 2x' alt=''>
+    </div>
+    <div class='col-6 mb-4'>
+      <img class='img-fluid' src='photos/2018-04-08-lombard.jpg' srcset='photos/2018-04-08-lombard@2x.jpg 2x' alt=''>
+    </div>
+    <div class='col-6 mb-4'>
+      <img class='img-fluid' src='photos/2018-04-14-twin-peaks.jpg' srcset='photos/2018-04-14-twin-peaks@2x.jpg 2x' alt=''>
+    </div>
+    <div class='col-6 mb-4'>
+      <img class='img-fluid' src='photos/2018-03-27-f-market.jpg' srcset='photos/2018-03-27-f-market@2x.jpg 2x' alt=''>
+    </div>
+    <div class='col-12 my-2'>
+      <p><a href='#'>see more</a> ></p>
+    </div>
+  </div>
+</section>
+
+<section class='container'>
+  <div class='row'>
+    <div class='col-12'>
+      <hr>
+      <h2>Recommendations</h2>
+    </div>
+    <div class='col-12 column-count'>
+      <ul>
+        {% for post in collections.recs %}
+        <li><a href='{{ post.url }}'>{{ post.data.title }}</a>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class='col-12 my-2'>
+      <p><a href='#'>see more</a> ></p>
+    </div>
+  </div>
+</section>
