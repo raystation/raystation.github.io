@@ -78,4 +78,22 @@ footer {
   font-size: 14px;
 }
 
+@media (prefers-color-scheme: dark) {
+  html, body {
+    background-color: black;
+  }
+  a:link, a:visited {
+    color: #9996FF;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: #CE6564;
+  }
+  body {
+    color: hsla(0, 0%, 90%, 0.75);
+  }
+  #home-logo a:link, #home-logo a:visited {
+    color: #FF9A00;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

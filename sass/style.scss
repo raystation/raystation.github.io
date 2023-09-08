@@ -11,6 +11,15 @@ $sm: "only screen and (min-width : 767px)";
 $md: "only screen and (min-width : 992px)";
 $lg: "only screen and (min-width : 1200px)";
 
+$lcars-orange: #FF9A00;
+$lcars-lavender: #9996FF;
+$lcars-purple: $lcars-lavender;
+$lcars-pink: #CD98CD;
+$lcars-salmon: #CE6564;
+$lcars-white: #FFFFFF;
+$lcars-grey: hsla(0, 0%, 10%, 1);
+$lcars-grey-lite: hsla(0, 0%, 70%, 1);
+
 h1, h2, h3, h4, h5, h6 {
   color: black;
   font-family: 'Fjalla One', sans-serif;
@@ -71,4 +80,28 @@ $reading-margin-xl: 14vw;
 footer {
   margin-bottom: 100px;
   font-size: 14px;
+}
+
+@mixin darkmode {
+  html, body {
+      background-color: black;
+  }
+  a:link, a:visited {
+    color: $lcars-lavender;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: $lcars-salmon;
+  }
+  body {
+    color: hsla(0, 0%, 90%, 0.75);
+  }
+  #home-logo {
+    a:link, a:visited {
+      color: $lcars-orange;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  @include darkmode;
 }
