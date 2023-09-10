@@ -1,15 +1,16 @@
-@import "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css";
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+@import 'bootstrap';
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
 
-* {box-sizing: border-box; margin: 0; padding: 0; }
-
-$body-size: calc(16px + 0.4vw);
+// VARIABLES
 $system-fonts: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 
-$xs: "only screen and (min-width : 480px)";
-$sm: "only screen and (min-width : 767px)";
-$md: "only screen and (min-width : 992px)";
-$lg: "only screen and (min-width : 1200px)";
+$break-xs: 480px;
+$break-sm: 767px;
+$break-md: 992px;
+$break-lg: 1200px;
 
 $lcars-orange: #FF9A00;
 $lcars-lavender: #9996FF;
@@ -20,24 +21,54 @@ $lcars-white: #FFFFFF;
 $lcars-grey: hsla(0, 0%, 10%, 1);
 $lcars-grey-lite: hsla(0, 0%, 70%, 1);
 
+// SETTINGS
+$font-serif: 'Bradford';
+$font-sans-serif: 'Inter var';
+$headline-font: $font-sans-serif;
+$body-font: $font-serif;
+$body-size: calc(18px + 0.4vw);
+$background-color: white;
+$font-color: rgb(43, 43, 43);
+$link-color: $lcars-purple;
+$link-color-hover: darken($lcars-purple,14);
+
 h1, h2, h3, h4, h5, h6 {
-  color: black;
-  font-family: 'Fjalla One', sans-serif;
-  // margin-top: 10px;
-  // margin-bottom: 10px;
+  font-family: $headline-font, sans-serif;
+  font-weight: 700;
+  letter-spacing: -3px;
 }
 
-h1 {font-size: 2.5em; }
+h1 {font-size: 4em; }
 h2 {font-size: 2em; }
 h3 {font-size: 1.75em; }
 h4 {font-size: 1.5em; }
 h5 {font-size: 1.25em; }
 h6 {font-size: 1.1em; }
 
+.button {
+margin-top: 40px;
+  a:link, a:visited {
+    background-color: #F8F5FE;
+    color: rgb(98, 25, 255);
+    padding: 8px 10px;
+    text-decoration: none;
+    font-family: "LabilVariable", sans-serif;
+    &:hover {
+      background-color: #E3DEFC;
+    }
+    i {
+      font-size: 80%;
+      margin-right: 5px;
+    }
+  }
+}
+
 body {
   font-size: $body-size;
-  font-family: $system-fonts;
-  color: hsla(0, 0%, 30%, 1);
+  font-family: $body-font;
+  color: $font-color;
+  letter-spacing: 0.09px;
+  font-weight: 400;
 }
 
 hr {
@@ -48,9 +79,118 @@ hr {
   border: 1px solid red;
 }
 
-#home-logo {
-  font-size: 3em;
-  letter-spacing: -2px;
+.app-container {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: darken($background-color,2);
+
+  nav {
+    // border: 1px solid pink;
+    border-top: 1px solid $lcars-grey-lite;
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    bottom: 0;
+    background-color: darken($background-color,2);
+    padding: 1em;
+    a:link, a:visited {
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: 500;
+      color: $link-color;
+      &:hover {
+        color: $link-color-hover;
+      }
+    }
+    #home-link {
+      font-family: $headline-font;
+      margin-bottom: 1em;
+      font-weight: 700;
+      a:link, a:visited {
+        font-family: inherit;
+        font-size: calc(16px + 0.5vw);
+      }
+      @media only screen and (min-width : $break-lg) {
+        margin-bottom: 1em;
+        font-size: calc(30px + 0.5vw);
+      }
+    }
+    i { font-size: 90%; }
+    .nav-items {
+      display: flex;
+      justify-content: space-between;
+      .home-link {
+        font-weight: 800;
+      }
+      .nav-item {
+        font-family: $system-fonts;
+        .nav-text {
+          @extend .d-none;
+          @extend .d-lg-block;
+        }
+      }
+    }
+  }
+  main {
+    h1 { font-size: calc(50px + 0.5vw); }
+    overflow: auto;
+    padding: 1em;
+    margin: 5px;
+    padding-top: 2em;
+    padding-left: 2em;
+    width: 100wh;
+    height: 100vh;
+    font-size: calc(14px + 0.3vw);
+  }
+}
+
+// TABLET
+@media only screen and (min-width : $break-md) {
+  .app-container {
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+
+    nav {
+      border-top: 0;
+      position: static;
+      margin-top: 2em;
+      top: 0;
+      left: 0;
+      width: 300px;
+      min-width: 260px;
+      height: 100vh;
+      .nav-items {
+        flex-direction: column;
+        .nav-item {
+          display: flex;
+          flex-direction: row;
+          i {margin-right: 10px; }
+        }
+      }
+    }
+    main {
+      font-size: calc(16px + 0.3vw);
+      background-color: $background-color;
+      margin: 5px;
+      border-radius: 5px;
+      height: 100vh;
+      overflow: auto;
+      width: 100%;
+      .content {
+        margin: 0 auto;
+        margin-top: 1em;
+        margin-bottom: 8em;
+        max-width: 800px;
+        .pub-date {
+          font-family: $font-sans-serif;
+        }
+      }
+    }
+  }
 }
 
 .column-count {
@@ -61,26 +201,33 @@ hr {
   }
 }
 
-.img-fluid {
-  width: 100%;
-}
-
-$reading-margin-xl: 14vw;
-
-.post {
-  h1, h2, h3, h4, h5, h6, p {
-    @media #{$lg}{
-      padding-left: $reading-margin-xl;
-      padding-right: $reading-margin-xl;
-    }
-  }
-}
-
 
 footer {
   margin-bottom: 100px;
   font-size: 14px;
 }
+
+// ========================
+// HELPERS
+
+.responsive-indicator {
+  display: none;
+  z-index: 1000;
+  background-color: red;
+  font-family: monospace;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: 16px;
+  padding: 3px 8px;
+  a:link, a:visited {
+      color: black;
+      text-decoration: underline;
+  }
+}
+
+// ========================
+// DARK MODE
 
 @mixin darkmode {
   html, body {
@@ -93,7 +240,7 @@ footer {
     color: $lcars-salmon;
   }
   body {
-    color: hsla(0, 0%, 90%, 0.75);
+    // color: hsla(0, 0%, 90%, 0.75);
   }
   #home-logo {
     a:link, a:visited {
@@ -103,5 +250,59 @@ footer {
 }
 
 @media (prefers-color-scheme: dark) {
-  @include darkmode;
+  // @include darkmode;
 }
+
+
+// ========================
+// FONT
+
+@font-face {
+  font-display: swap;
+  font-family: Bradford;
+  font-weight: 400;
+  font-style: normal;
+  src: url(/fonts/BradfordLLWeb-Regular.eot);
+  src: url(/fonts/BradfordLLWeb-Regular.woff) format("woff"),url(/fonts/BradfordLLWeb-Regular.woff2) format("woff2")
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Bradford;
+  font-weight: 400;
+  font-style: italic;
+  src: url(/fonts/BradfordLLWeb-Italic.eot);
+  src: url(/fonts/BradfordLLWeb-Italic.woff) format("woff"),url(/fonts/BradfordLLWeb-Italic.woff2) format("woff2")
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Bradford;
+  font-weight: 700;
+  font-style: normal;
+  src: url(/fonts/BradfordLLWeb-Bold.eot);
+  src: url(/fonts/BradfordLLWeb-Bold.woff) format("woff"),url(/fonts/BradfordLLWeb-Bold.woff2) format("woff2")
+}
+
+@font-face {
+  font-display: swap;
+  font-family: LabilVariable;
+  src: url(/fonts/LabilGrotesk-Variable.woff2) format("woff2")
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Labil;
+  font-weight: 400;
+  font-style: normal;
+  src: url(/fonts/LabilGrotesk-Regular.woff) format("woff"),url(/fonts/LabilGrotesk-Regular.woff2) format("woff2")
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Labil;
+  font-weight: 400;
+  font-style: italic;
+  src: url(/fonts/LabilGrotesk-Italic.woff) format("woff"),url(/fonts/LabilGrotesk-Italic.woff2) format("woff2")
+}
+

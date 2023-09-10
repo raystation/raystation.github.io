@@ -3,6 +3,7 @@ module.exports = function(eleventyConfig) {
 
   // photos
   eleventyConfig.addPassthroughCopy("photos");
+  eleventyConfig.addPassthroughCopy("src/fonts");
   // eleventyConfig.addCollection("photos", function (collection) {
   //   return collection.getFilteredByGlob("photos/*.jpg"); // Adjust the glob pattern as needed
   // });

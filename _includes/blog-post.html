@@ -1,16 +1,9 @@
 ---
-layout: basic.html
+layout: app-main.html
 ---
 
-  <section class='container post'>
-    <div class='row'>
-      <div class='col-12'>
-        <h1>{{ title }}</h1>
-        <p>Published: {{ date | date }}</p>
-        <main>
-          {{ content }}
-        </main>
-        <p>< <a href='/'>back to home</a></p>
-      </div>
-    </div>
-  </section>
+<h1>{{ title }}</h1>
+<p class='pub-date mb-4'>Published: {{ date | date }}</p>
+{{ content }}
+
+<div class='button'><a href="/{{ backlink }}"> <i class="fa-solid fa-chevron-left"></i> more {{ backlink }}</a></div>
