@@ -1,4 +1,5 @@
 ---
+title: Contact
 layout: app-main.html
 ---
 

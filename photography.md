@@ -1,4 +1,5 @@
 ---
+title: Photography
 layout: app-main.html
 ---
 
