@@ -29,13 +29,18 @@ $body-font: $font-serif;
 $body-size: calc(18px + 0.4vw);
 $background-color: white;
 $font-color: rgb(43, 43, 43);
-$link-color: $lcars-purple;
+$link-color: darken($lcars-purple,10%);
 $link-color-hover: darken($lcars-purple,14);
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $headline-font, sans-serif;
   font-weight: 700;
-  letter-spacing: -3px;
+  letter-spacing: -0.04em;
+  margin-bottom: 0.25em;
+  margin-top: 0.5em;
+}
+h1 {
+  // margin-bottom: 0.75em;
 }
 
 h1 {font-size: 4em; }
@@ -44,6 +49,43 @@ h3 {font-size: 1.75em; }
 h4 {font-size: 1.5em; }
 h5 {font-size: 1.25em; }
 h6 {font-size: 1.1em; }
+
+a:link, a:visited {
+  color: $link-color;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+picture {
+  img {
+    width: 100%;
+  }
+}
+
+li {
+  line-height: 1.25em;
+}
+
+.caption {
+  font-family: $system-fonts;
+  font-size: calc(10px + 0.5vw);
+  font-weight: 600;
+  opacity: 50%;
+}
+
+.img {
+  margin-bottom: 2em;
+  img {
+    border-radius: 8px;
+  }
+}
+
+.intro {
+  font-size: calc(22px + 0.5vw);
+  margin-bottom: 1.25em;
+}
 
 .button {
 margin-top: 40px;
@@ -69,6 +111,7 @@ body {
   color: $font-color;
   letter-spacing: 0.09px;
   font-weight: 400;
+  line-height: 1.65em;
 }
 
 hr {
@@ -108,14 +151,18 @@ hr {
     #home-link {
       font-family: $headline-font;
       margin-bottom: 1em;
-      font-weight: 700;
+      letter-spacing: -0.04em;
       a:link, a:visited {
+        font-weight: 800;
         font-family: inherit;
+        color: black;
         font-size: calc(16px + 0.5vw);
       }
       @media only screen and (min-width : $break-lg) {
         margin-bottom: 1em;
-        font-size: calc(30px + 0.5vw);
+        a:link, a:visited {
+          font-size: calc(20px + 0.75vw);
+        }
       }
     }
     i { font-size: 90%; }

@@ -1,0 +1,20 @@
+---
+layout: app-main.html
+---
+
+<h1>Inktober 2023</h1>
+<p class='intro'>
+	I did not follow the prompt list, and choose to just draw as many days as possible. I ended up drawing 21/31!
+</p>
+
+{% set baseFileName = 'inktober' %}
+{% set maxIndex = 21 %} 
+
+{% for i in range(1, maxIndex + 1) %}
+<div class='img'>
+	<picture>
+		<source srcset='/images/projects/inktober-2023/{{ baseFileName }}{{ i }}@3x.webp 3x' type='image/webp' media='(min-width: 1200px)'>
+		<img class='img-fluid' src='/images/projects/inktober-2023/{{ baseFileName }}{{ i }}.jpg' srcset='/images/projects/inktober-2023/{{ baseFileName }}{{ i }}@2x.jpg 2x' alt='{{ baseFileName }}{{ i }}' >
+	</picture>
+</div>
+{% endfor %}

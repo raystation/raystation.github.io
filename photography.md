@@ -2,7 +2,7 @@
 layout: app-main.html
 ---
 
-<h1 class='mb-5'>Photography</h1>
+# Photography
 
 <div class='mb-5'>
   <img class='img-fluid' src='/photos/2018-02-24-molinari.jpg' srcset='/photos/2018-02-24-molinari@2x.jpg 2x' alt=''>

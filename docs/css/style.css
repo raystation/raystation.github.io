@@ -13068,7 +13068,9 @@ textarea.form-control-lg {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "Inter var", sans-serif;
   font-weight: 700;
-  letter-spacing: -3px;
+  letter-spacing: -0.04em;
+  margin-bottom: 0.25em;
+  margin-top: 0.5em;
 }
 
 h1, .h1 {
@@ -13095,6 +13097,41 @@ h6, .h6 {
   font-size: 1.1em;
 }
 
+a:link, a:visited {
+  color: #6763ff;
+  text-decoration: none;
+}
+a:link:hover, a:visited:hover {
+  text-decoration: underline;
+}
+
+picture img {
+  width: 100%;
+}
+
+li {
+  line-height: 1.25em;
+}
+
+.caption {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: calc(10px + 0.5vw);
+  font-weight: 600;
+  opacity: 50%;
+}
+
+.img {
+  margin-bottom: 2em;
+}
+.img img {
+  border-radius: 8px;
+}
+
+.intro {
+  font-size: calc(22px + 0.5vw);
+  margin-bottom: 1.25em;
+}
+
 .button {
   margin-top: 40px;
 }
@@ -13119,6 +13156,7 @@ body {
   color: rgb(43, 43, 43);
   letter-spacing: 0.09px;
   font-weight: 400;
+  line-height: 1.65em;
 }
 
 hr {
@@ -13150,7 +13188,7 @@ hr {
   font-size: 16px;
   text-decoration: none;
   font-weight: 500;
-  color: #9996FF;
+  color: #6763ff;
 }
 .app-container nav a:link:hover, .app-container nav a:visited:hover {
   color: #544fff;
@@ -13158,16 +13196,20 @@ hr {
 .app-container nav #home-link {
   font-family: "Inter var";
   margin-bottom: 1em;
-  font-weight: 700;
+  letter-spacing: -0.04em;
 }
 .app-container nav #home-link a:link, .app-container nav #home-link a:visited {
+  font-weight: 800;
   font-family: inherit;
+  color: black;
   font-size: calc(16px + 0.5vw);
 }
 @media only screen and (min-width: 1200px) {
   .app-container nav #home-link {
     margin-bottom: 1em;
-    font-size: calc(30px + 0.5vw);
+  }
+  .app-container nav #home-link a:link, .app-container nav #home-link a:visited {
+    font-size: calc(20px + 0.75vw);
   }
 }
 .app-container nav i {
