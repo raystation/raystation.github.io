@@ -2,7 +2,7 @@
 <html lang='en'>
 <head>
   <meta charset='UTF-8'>
-  <title>Ray Y - The Nintendo DS + 3DS predates smartphone</title>
+  <title>Ray Y - {{ title }}</title>
   <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
   <link rel="preconnect" href="https://rsms.me/">
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
@@ -17,17 +17,19 @@
 
         <div class='nav-item' id='home-link'><a href='/'>Ray Yuen</a></div>
 
-        <a href='/'><div class='nav-item'><div class='emoji'>🏠</div><div class='nav-text'>Home</div></div></a>
+        <a href='/'><div class='nav-item'><div><i class="fa-solid fa-house"></i></div><div class='nav-text'>Home</div></div></a>
 
-        <a href='/projects'><div class='nav-item'><div class='emoji'>🖼️</div><div class='nav-text'>Projects</div></div></a>
+        <!-- <a href='/about'><div class='nav-item'><div><i class="fa-solid fa-user"></i></div><div class='nav-text'>About</div></div></a> -->
 
-        <a href='/writing'><div class='nav-item'><div class='emoji'>📝</i></div><div class='nav-text'>Writing</div></div></a>
+        <a href='/projects'><div class='nav-item'><div><i class="fa-solid fa-folder"></i></div><div class='nav-text'>Projects</div></div></a>
 
-        <a href='/photography'><div class='nav-item'><div class='emoji'>📷</i></div><div class='nav-text'>Photography</div></div></a>
+        <a href='/writing'><div class='nav-item'><div><i class="fa-solid fa-pencil"></i></div><div class='nav-text'>Writing</div></div></a>
 
-        <a href='/recommendations'><div class='nav-item'><div class='emoji'>👍</div><div class='nav-text'>Recommendations</div></div></a>
+        <a href='/photography'><div class='nav-item'><div><i class="fa-solid fa-camera"></i></div><div class='nav-text'>Photography</div></div></a>
 
-        <a href='/contact'><div class='nav-item'><div class='emoji'>✉️</div><div class='nav-text'>Contact</div></div></a>
+        <a href='/recommendations'><div class='nav-item'><div><i class="fa-solid fa-thumbs-up"></i></div><div class='nav-text'>Recommendations</div></div></a>
+
+        <a href='/contact'><div class='nav-item'><div><i class="fa-solid fa-envelope"></i></div><div class='nav-text'>Contact</div></div></a>
 
 
       </div>
@@ -36,14 +38,7 @@
     <main>
 
       <div class='content'>
-        
-<h1>The Nintendo DS + 3DS predates smartphone</h1>
-<p class='pub-date mb-4'>Published: Monday, August 7, 2023 at 5:00 pm -0700</p>
-<img src='https://unsplash.it/1920/1080' alt='' class='img-fluid my-4'>
-<p>All the big milestones that happened in mobile gaming all started wtih Nintendo. Pokemon Go...</p>
-
-
-<div class='button'><a href="/writing"> <i class="fa-solid fa-chevron-left"></i> more writing</a></div>
+        {{ content }}
       </div>
 
     </main>

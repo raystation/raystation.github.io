@@ -13219,11 +13219,26 @@ hr {
   display: flex;
   justify-content: space-between;
 }
-.app-container nav .nav-items .home-link {
+.app-container nav .nav-items #home-link {
   font-weight: 800;
+  display: none;
+}
+@media only screen and (min-width: 1200px) {
+  .app-container nav .nav-items #home-link {
+    display: block;
+  }
 }
 .app-container nav .nav-items .nav-item {
+  width: 16.6666666667%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+.app-container nav .nav-items .emoji {
+  margin-right: 10px;
+}
+@media only screen and (min-width: 1200px) {
+  .app-container nav .nav-items .emoji {
+    margin-right: 0px;
+  }
 }
 .app-container main {
   overflow: auto;

@@ -170,14 +170,26 @@ hr {
     .nav-items {
       display: flex;
       justify-content: space-between;
-      .home-link {
+      #home-link {
         font-weight: 800;
+        display: none;
+        @media only screen and (min-width : $break-lg) { 
+          display: block;
+        }
       }
       .nav-item {
+        width: calc(100%/6);
         font-family: $system-fonts;
         .nav-text {
           @extend .d-none;
           @extend .d-lg-block;
+        }
+      }
+      .emoji {
+        // border: 1px solid pink;
+        margin-right: 10px;
+        @media only screen and (min-width : $break-lg) { 
+          margin-right: 0px;
         }
       }
     }
