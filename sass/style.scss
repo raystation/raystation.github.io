@@ -39,11 +39,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.25em;
   margin-top: 0.5em;
 }
-h1 {
-  // margin-bottom: 0.75em;
-}
 
-h1 {font-size: 4em; }
+h1 {
+  // font-size: 4em; 
+  font-size: calc(32px + 2vw);
+}
 h2 {font-size: 2em; }
 h3 {font-size: 1.75em; }
 h4 {font-size: 1.5em; }
@@ -178,7 +178,7 @@ hr {
         }
       }
       .nav-item {
-        width: calc(100%/6);
+        // width: calc(100%/6);
         font-family: $system-fonts;
         .nav-text {
           @extend .d-none;
@@ -187,15 +187,15 @@ hr {
       }
       .emoji {
         // border: 1px solid pink;
-        margin-right: 10px;
-        @media only screen and (min-width : $break-lg) { 
-          margin-right: 0px;
+        margin-right: 0px;
+        @media only screen and (min-width : $break-md) { 
+          margin-right: 10px;
         }
       }
     }
   }
   main {
-    h1 { font-size: calc(50px + 0.5vw); }
+    // h1 { font-size: calc(50px + 0.5vw); }
     overflow: auto;
     padding: 1em;
     margin: 5px;

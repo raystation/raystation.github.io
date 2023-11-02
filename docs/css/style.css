@@ -13074,7 +13074,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 h1, .h1 {
-  font-size: 4em;
+  font-size: calc(32px + 2vw);
 }
 
 h2, .h2 {
@@ -13229,15 +13229,14 @@ hr {
   }
 }
 .app-container nav .nav-items .nav-item {
-  width: 16.6666666667%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .app-container nav .nav-items .emoji {
-  margin-right: 10px;
+  margin-right: 0px;
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 992px) {
   .app-container nav .nav-items .emoji {
-    margin-right: 0px;
+    margin-right: 10px;
   }
 }
 .app-container main {
@@ -13249,9 +13248,6 @@ hr {
   width: 100wh;
   height: 100vh;
   font-size: calc(14px + 0.3vw);
-}
-.app-container main h1, .app-container main .h1 {
-  font-size: calc(50px + 0.5vw);
 }
 
 @media only screen and (min-width: 992px) {
