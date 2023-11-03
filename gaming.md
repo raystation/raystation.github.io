@@ -3,8 +3,6 @@ title: Home
 layout: app-main.html
 ---
 
-
-
 <h1>Gaming</h1>
 
 ## Currently

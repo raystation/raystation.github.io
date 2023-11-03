@@ -13069,12 +13069,21 @@ textarea.form-control-lg {
   display: none;
 }
 
+body {
+  font-size: calc(18px + 0.4vw);
+  font-family: "Inter var";
+  color: hsl(0, 0%, 20%);
+  font-weight: 400;
+  line-height: 1.25em;
+}
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  font-family: "Inter var", sans-serif;
-  font-weight: 700;
+  font-family: "Inter var";
+  font-weight: 600;
   letter-spacing: -0.04em;
   margin-bottom: 0.25em;
   margin-top: 0.5em;
+  color: black;
 }
 
 h1, .h1 {
@@ -13115,53 +13124,7 @@ picture img {
 }
 
 li {
-  line-height: 1.25em;
-}
-
-.caption {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-size: calc(10px + 0.5vw);
-  font-weight: 600;
-  opacity: 50%;
-}
-
-.img {
-  margin-top: 2em;
-}
-.img img {
-  border-radius: 8px;
-}
-
-.intro {
-  font-size: calc(22px + 0.5vw);
-  margin-bottom: 1.25em;
-  letter-spacing: -0.035em;
-}
-
-.button {
-  margin-top: 40px;
-}
-.button a:link, .button a:visited {
-  background-color: #F8F5FE;
-  color: rgb(98, 25, 255);
-  padding: 8px 10px;
-  text-decoration: none;
-  font-family: "LabilVariable", sans-serif;
-}
-.button a:link:hover, .button a:visited:hover {
-  background-color: #E3DEFC;
-}
-.button a:link i, .button a:visited i {
-  font-size: 80%;
-  margin-right: 5px;
-}
-
-body {
-  font-size: calc(18px + 0.4vw);
-  font-family: "Inter var";
-  color: rgb(43, 43, 43);
-  font-weight: 400;
-  line-height: 1.65em;
+  line-height: 1.45em;
 }
 
 hr {
@@ -13203,12 +13166,11 @@ figcaption {
   color: #544fff;
 }
 .app-container nav #home-link {
-  font-family: "Inter var";
+  font-family: LabilVariable, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   margin-bottom: 1em;
   letter-spacing: -0.04em;
 }
 .app-container nav #home-link a:link, .app-container nav #home-link a:visited {
-  font-weight: 800;
   font-family: inherit;
   color: black;
   font-size: calc(16px + 0.5vw);
@@ -13323,6 +13285,44 @@ footer {
   font-size: 14px;
 }
 
+.caption {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: calc(10px + 0.5vw);
+  font-weight: 600;
+  opacity: 50%;
+}
+
+.img {
+  margin-top: 2em;
+}
+.img img {
+  border-radius: 8px;
+}
+
+.intro {
+  font-size: calc(22px + 0.5vw);
+  margin-bottom: 1.25em;
+  letter-spacing: -0.035em;
+  line-height: 1.25em;
+}
+
+.button {
+  margin-top: 40px;
+}
+.button a:link, .button a:visited {
+  background-color: #F8F5FE;
+  color: rgb(98, 25, 255);
+  padding: 8px 10px;
+  text-decoration: none;
+}
+.button a:link:hover, .button a:visited:hover {
+  background-color: #E3DEFC;
+}
+.button a:link i, .button a:visited i {
+  font-size: 80%;
+  margin-right: 5px;
+}
+
 .responsive-indicator {
   z-index: 1000;
   background-color: red;
@@ -13340,46 +13340,8 @@ footer {
 
 @font-face {
   font-display: swap;
-  font-family: Bradford;
-  font-weight: 400;
-  font-style: normal;
-  src: url(/src/fonts/BradfordLLWeb-Regular.eot);
-  src: url(/src/fonts/BradfordLLWeb-Regular.woff) format("woff"), url(/src/fonts/BradfordLLWeb-Regular.woff2) format("woff2");
-}
-@font-face {
-  font-display: swap;
-  font-family: Bradford;
-  font-weight: 400;
-  font-style: italic;
-  src: url(/src/fonts/BradfordLLWeb-Italic.eot);
-  src: url(/src/fonts/BradfordLLWeb-Italic.woff) format("woff"), url(/src/fonts/BradfordLLWeb-Italic.woff2) format("woff2");
-}
-@font-face {
-  font-display: swap;
-  font-family: Bradford;
-  font-weight: 700;
-  font-style: normal;
-  src: url(/src/fonts/BradfordLLWeb-Bold.eot);
-  src: url(/src/fonts/BradfordLLWeb-Bold.woff) format("woff"), url(/src/fonts/BradfordLLWeb-Bold.woff2) format("woff2");
-}
-@font-face {
-  font-display: swap;
   font-family: LabilVariable;
-  src: url(/fonts/LabilGrotesk-Variable.woff2) format("woff2");
-}
-@font-face {
-  font-display: swap;
-  font-family: Labil;
-  font-weight: 400;
-  font-style: normal;
-  src: url(/fonts/LabilGrotesk-Regular.woff) format("woff"), url(/fonts/LabilGrotesk-Regular.woff2) format("woff2");
-}
-@font-face {
-  font-display: swap;
-  font-family: Labil;
-  font-weight: 400;
-  font-style: italic;
-  src: url(/fonts/LabilGrotesk-Italic.woff) format("woff"), url(/fonts/LabilGrotesk-Italic.woff2) format("woff2");
+  src: url(/src/fonts/LabilGrotesk-Variable.woff2) format("woff2");
 }
 
 /*# sourceMappingURL=style.css.map */

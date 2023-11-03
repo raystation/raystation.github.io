@@ -24,24 +24,37 @@ $lcars-white: #FFFFFF;
 $lcars-grey: hsla(0, 0%, 10%, 1);
 $lcars-grey-lite: hsla(0, 0%, 70%, 1);
 
-// SETTINGS
-// $font-serif: 'Bradford',"Georgia", "Times New Roman", "Baskerville", "Palatino", "Palatino Linotype", "Book Antiqua", "serif";
-$font-serif: 'Bradford',"Georgia", "Times New Roman", "Baskerville", "Palatino", "Palatino Linotype", "Book Antiqua", "serif";
+// ========================
+// TYPOGRAPHY
+$font-serif: "Georgia", "Times New Roman", "Baskerville", "Palatino", "Palatino Linotype", "Book Antiqua", "serif";
 $font-sans-serif: 'Inter var';
 $headline-font: $font-sans-serif;
 $body-font: $font-sans-serif;
+
+// ========================
+// SIZES
 $body-size: calc(18px + 0.4vw);
+$body-color: hsla(0, 0%, 20%, 1);
 $background-color: white;
-$font-color: rgb(43, 43, 43);
 $link-color: darken($lcars-purple,10%);
 $link-color-hover: darken($lcars-purple,14);
 
+body {
+  font-size: $body-size;
+  font-family: $body-font;
+  color: $body-color;
+  // letter-spacing: -0.03x5em;
+  font-weight: 400;
+  line-height: 1.25em;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: $headline-font, sans-serif;
-  font-weight: 700;
+  font-family: $headline-font;
+  font-weight: 600;
   letter-spacing: -0.04em;
   margin-bottom: 0.25em;
   margin-top: 0.5em;
+  color: black;
 }
 
 h1 {
@@ -70,55 +83,7 @@ picture {
 }
 
 li {
-  line-height: 1.25em;
-}
-
-.caption {
-  font-family: $system-fonts;
-  font-size: calc(10px + 0.5vw);
-  font-weight: 600;
-  opacity: 50%;
-}
-
-.img {
-  // margin-bottom: 2em;
-  margin-top: 2em;
-  img {
-    border-radius: 8px;
-  }
-}
-
-.intro {
-  font-size: calc(22px + 0.5vw);
-  margin-bottom: 1.25em;
-  letter-spacing: -0.035em;
-}
-
-.button {
-margin-top: 40px;
-  a:link, a:visited {
-    background-color: #F8F5FE;
-    color: rgb(98, 25, 255);
-    padding: 8px 10px;
-    text-decoration: none;
-    font-family: "LabilVariable", sans-serif;
-    &:hover {
-      background-color: #E3DEFC;
-    }
-    i {
-      font-size: 80%;
-      margin-right: 5px;
-    }
-  }
-}
-
-body {
-  font-size: $body-size;
-  font-family: $body-font;
-  color: $font-color;
-  // letter-spacing: -0.03x5em;
-  font-weight: 400;
-  line-height: 1.65em;
+  line-height: 1.45em;
 }
 
 hr {
@@ -158,11 +123,11 @@ figcaption {
       }
     }
     #home-link {
-      font-family: $headline-font;
+      font-family: LabilVariable, $system-fonts;
       margin-bottom: 1em;
       letter-spacing: -0.04em;
       a:link, a:visited {
-        font-weight: 800;
+        // font-weight: 900;
         font-family: inherit;
         color: black;
         font-size: calc(16px + 0.5vw);
@@ -282,6 +247,47 @@ footer {
   font-size: 14px;
 }
 
+
+.caption {
+  font-family: $system-fonts;
+  font-size: calc(10px + 0.5vw);
+  font-weight: 600;
+  opacity: 50%;
+}
+
+.img {
+  // margin-bottom: 2em;
+  margin-top: 2em;
+  img {
+    border-radius: 8px;
+  }
+}
+
+.intro {
+  font-size: calc(22px + 0.5vw);
+  margin-bottom: 1.25em;
+  letter-spacing: -0.035em;
+  line-height: 1.25em;
+}
+
+.button {
+margin-top: 40px;
+  a:link, a:visited {
+    background-color: #F8F5FE;
+    color: rgb(98, 25, 255);
+    padding: 8px 10px;
+    text-decoration: none;
+    // font-family: "LabilVariable", sans-serif;
+    &:hover {
+      background-color: #E3DEFC;
+    }
+    i {
+      font-size: 80%;
+      margin-right: 5px;
+    }
+  }
+}
+
 // ========================
 // HELPERS
 
@@ -331,52 +337,52 @@ footer {
 // ========================
 // FONT
 
-@font-face {
-  font-display: swap;
-  font-family: Bradford;
-  font-weight: 400;
-  font-style: normal;
-  src: url(/src/fonts/BradfordLLWeb-Regular.eot);
-  src: url(/src/fonts/BradfordLLWeb-Regular.woff) format("woff"),url(/src/fonts/BradfordLLWeb-Regular.woff2) format("woff2")
-}
+// @font-face {
+//   font-display: swap;
+//   font-family: Bradford;
+//   font-weight: 400;
+//   font-style: normal;
+//   src: url(/src/fonts/BradfordLLWeb-Regular.eot);
+//   src: url(/src/fonts/BradfordLLWeb-Regular.woff) format("woff"),url(/src/fonts/BradfordLLWeb-Regular.woff2) format("woff2")
+// }
 
-@font-face {
-  font-display: swap;
-  font-family: Bradford;
-  font-weight: 400;
-  font-style: italic;
-  src: url(/src/fonts/BradfordLLWeb-Italic.eot);
-  src: url(/src/fonts/BradfordLLWeb-Italic.woff) format("woff"),url(/src/fonts/BradfordLLWeb-Italic.woff2) format("woff2")
-}
+// @font-face {
+//   font-display: swap;
+//   font-family: Bradford;
+//   font-weight: 400;
+//   font-style: italic;
+//   src: url(/src/fonts/BradfordLLWeb-Italic.eot);
+//   src: url(/src/fonts/BradfordLLWeb-Italic.woff) format("woff"),url(/src/fonts/BradfordLLWeb-Italic.woff2) format("woff2")
+// }
 
-@font-face {
-  font-display: swap;
-  font-family: Bradford;
-  font-weight: 700;
-  font-style: normal;
-  src: url(/src/fonts/BradfordLLWeb-Bold.eot);
-  src: url(/src/fonts/BradfordLLWeb-Bold.woff) format("woff"),url(/src/fonts/BradfordLLWeb-Bold.woff2) format("woff2")
-}
+// @font-face {
+//   font-display: swap;
+//   font-family: Bradford;
+//   font-weight: 700;
+//   font-style: normal;
+//   src: url(/src/fonts/BradfordLLWeb-Bold.eot);
+//   src: url(/src/fonts/BradfordLLWeb-Bold.woff) format("woff"),url(/src/fonts/BradfordLLWeb-Bold.woff2) format("woff2")
+// }
 
 @font-face {
   font-display: swap;
   font-family: LabilVariable;
-  src: url(/fonts/LabilGrotesk-Variable.woff2) format("woff2")
+  src: url(/src/fonts/LabilGrotesk-Variable.woff2) format("woff2")
 }
 
-@font-face {
-  font-display: swap;
-  font-family: Labil;
-  font-weight: 400;
-  font-style: normal;
-  src: url(/fonts/LabilGrotesk-Regular.woff) format("woff"),url(/fonts/LabilGrotesk-Regular.woff2) format("woff2")
-}
+// @font-face {
+//   font-display: swap;
+//   font-family: Labil;
+//   font-weight: 400;
+//   font-style: normal;
+//   src: url(/src/fonts/LabilGrotesk-Regular.woff) format("woff"),url(/src/fonts/LabilGrotesk-Regular.woff2) format("woff2")
+// }
 
-@font-face {
-  font-display: swap;
-  font-family: Labil;
-  font-weight: 400;
-  font-style: italic;
-  src: url(/fonts/LabilGrotesk-Italic.woff) format("woff"),url(/fonts/LabilGrotesk-Italic.woff2) format("woff2")
-}
+// @font-face {
+//   font-display: swap;
+//   font-family: Labil;
+//   font-weight: 400;
+//   font-style: italic;
+//   src: url(/src/fonts/LabilGrotesk-Italic.woff) format("woff"),url(/src/fonts/LabilGrotesk-Italic.woff2) format("woff2")
+// }
 
