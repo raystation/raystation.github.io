@@ -5,15 +5,15 @@
 }
 
 // DEBUG
-.responsive-indicator {display: none; }
+// .responsive-indicator {display: none; }
 
 // VARIABLES
 $system-fonts: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 
-$break-xs: 480px;
-$break-sm: 767px;
-$break-md: 992px;
-$break-lg: 1200px;
+// $break-xs: 480px;
+// $break-sm: 767px;
+// $break-md: 992px;
+// $break-lg: 1200px;
 
 $lcars-orange: #FF9A00;
 $lcars-lavender: #9996FF;
@@ -131,8 +131,11 @@ figcaption {
         font-family: inherit;
         color: black;
         font-size: calc(16px + 0.5vw);
+        &:hover {
+          color: $link-color;
+        }
       }
-      @media only screen and (min-width : $break-lg) {
+      @media only screen and (min-width : $break-md) {
         margin-bottom: 1em;
         a:link, a:visited {
           font-size: calc(20px + 0.75vw);
@@ -180,6 +183,23 @@ figcaption {
   }
 }
 
+#home-link-mobile {
+  margin-bottom: 1em;
+  font-size: calc(25px + 0.5vw);
+  // border: 1px solid pink;
+  font-family: LabilVariable, $system-fonts;
+  a:link, a:visited {
+    color: black;
+    &:hover {
+      color: $link-color;
+      text-decoration: none;
+    }
+  }
+  @media only screen and (min-width : $break-lg) { 
+    display:none;
+  }
+}
+
 .portrait img {
   @media only screen and (min-width : $break-md) { 
     width: 60%;
@@ -188,7 +208,7 @@ figcaption {
 }
 
 // TABLET
-@media only screen and (min-width : $break-md) {
+@media only screen and (min-width : $break-lg) {
   .app-container {
     flex-direction: row;
     margin: 0;

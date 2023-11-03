@@ -13065,10 +13065,6 @@ textarea.form-control-lg {
     font-family: "Inter var", sans-serif;
   }
 }
-.responsive-indicator {
-  display: none;
-}
-
 body {
   font-size: calc(18px + 0.4vw);
   font-family: "Inter var";
@@ -13175,7 +13171,10 @@ figcaption {
   color: black;
   font-size: calc(16px + 0.5vw);
 }
-@media only screen and (min-width: 1200px) {
+.app-container nav #home-link a:link:hover, .app-container nav #home-link a:visited:hover {
+  color: #6763ff;
+}
+@media only screen and (min-width: 720px) {
   .app-container nav #home-link {
     margin-bottom: 1em;
   }
@@ -13194,7 +13193,7 @@ figcaption {
   font-weight: 800;
   display: none;
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 960px) {
   .app-container nav .nav-items #home-link {
     display: block;
   }
@@ -13205,7 +13204,7 @@ figcaption {
 .app-container nav .nav-items .emoji {
   margin-right: 0px;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 720px) {
   .app-container nav .nav-items .emoji {
     margin-right: 10px;
   }
@@ -13221,13 +13220,31 @@ figcaption {
   font-size: calc(14px + 0.3vw);
 }
 
-@media only screen and (min-width: 992px) {
+#home-link-mobile {
+  margin-bottom: 1em;
+  font-size: calc(25px + 0.5vw);
+  font-family: LabilVariable, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+#home-link-mobile a:link, #home-link-mobile a:visited {
+  color: black;
+}
+#home-link-mobile a:link:hover, #home-link-mobile a:visited:hover {
+  color: #6763ff;
+  text-decoration: none;
+}
+@media only screen and (min-width: 960px) {
+  #home-link-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 720px) {
   .portrait img {
     width: 60%;
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 960px) {
   .app-container {
     flex-direction: row;
     margin: 0;
