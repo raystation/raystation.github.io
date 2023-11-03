@@ -6,7 +6,7 @@ layout: app-main.html
 <h1>Minecraft</h1>
 
 <p class='intro'>
-	During the pandemic, I really got into Minecraft. I can now place this game in my top 10 games of all time. 
+	I absolutely adore Minecraft for its sheer simplicity and endless possibilities. It holds a special place in my heart, making it to my personal top 10 of favorite games. Throughout the pandemic, I found solace and connection by playing online with friends. Its blocky world and open-ended gameplay offer a unique blend of creativity and adventure that's truly captivating. Whether I'm constructing wacky structures, embarking on epic quests, or learning the mechanics of the world/blocks, Minecraft's immersive universe has become a sanctuary of both fun and creativity for me.
 </p>
 
 <picture>
