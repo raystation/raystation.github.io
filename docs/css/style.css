@@ -13065,6 +13065,10 @@ textarea.form-control-lg {
     font-family: "Inter var", sans-serif;
   }
 }
+.responsive-indicator {
+  display: none;
+}
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "Inter var", sans-serif;
   font-weight: 700;
@@ -13074,6 +13078,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 h1, .h1 {
+  margin-bottom: 0.5em;
   font-size: calc(32px + 2vw);
 }
 
@@ -13130,6 +13135,7 @@ li {
 .intro {
   font-size: calc(22px + 0.5vw);
   margin-bottom: 1.25em;
+  letter-spacing: -0.035em;
 }
 
 .button {
@@ -13152,9 +13158,8 @@ li {
 
 body {
   font-size: calc(18px + 0.4vw);
-  font-family: "Bradford";
+  font-family: "Inter var";
   color: rgb(43, 43, 43);
-  letter-spacing: 0.09px;
   font-weight: 400;
   line-height: 1.65em;
 }
@@ -13165,6 +13170,10 @@ hr {
 
 .viz {
   border: 1px solid red;
+}
+
+figcaption {
+  margin-bottom: 0.75em;
 }
 
 .app-container {
@@ -13251,6 +13260,12 @@ hr {
 }
 
 @media only screen and (min-width: 992px) {
+  .portrait img {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
   .app-container {
     flex-direction: row;
     margin: 0;
@@ -13309,7 +13324,6 @@ footer {
 }
 
 .responsive-indicator {
-  display: none;
   z-index: 1000;
   background-color: red;
   font-family: monospace;
@@ -13329,24 +13343,24 @@ footer {
   font-family: Bradford;
   font-weight: 400;
   font-style: normal;
-  src: url(/fonts/BradfordLLWeb-Regular.eot);
-  src: url(/fonts/BradfordLLWeb-Regular.woff) format("woff"), url(/fonts/BradfordLLWeb-Regular.woff2) format("woff2");
+  src: url(/src/fonts/BradfordLLWeb-Regular.eot);
+  src: url(/src/fonts/BradfordLLWeb-Regular.woff) format("woff"), url(/src/fonts/BradfordLLWeb-Regular.woff2) format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: Bradford;
   font-weight: 400;
   font-style: italic;
-  src: url(/fonts/BradfordLLWeb-Italic.eot);
-  src: url(/fonts/BradfordLLWeb-Italic.woff) format("woff"), url(/fonts/BradfordLLWeb-Italic.woff2) format("woff2");
+  src: url(/src/fonts/BradfordLLWeb-Italic.eot);
+  src: url(/src/fonts/BradfordLLWeb-Italic.woff) format("woff"), url(/src/fonts/BradfordLLWeb-Italic.woff2) format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: Bradford;
   font-weight: 700;
   font-style: normal;
-  src: url(/fonts/BradfordLLWeb-Bold.eot);
-  src: url(/fonts/BradfordLLWeb-Bold.woff) format("woff"), url(/fonts/BradfordLLWeb-Bold.woff2) format("woff2");
+  src: url(/src/fonts/BradfordLLWeb-Bold.eot);
+  src: url(/src/fonts/BradfordLLWeb-Bold.woff) format("woff"), url(/src/fonts/BradfordLLWeb-Bold.woff2) format("woff2");
 }
 @font-face {
   font-display: swap;

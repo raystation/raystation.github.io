@@ -25,3 +25,8 @@ Designer & Illustrator</h1>
 - Pandemic hobby: sewing pouches.
 
 <p class='caption'>Updated: Nov 2023</p>
+
+<picture class='portrait'>
+	<source srcset='images/src/portrait/portrait@3x.webp 3x' type='image/webp' media='(min-width: 1200px)'>
+	<img src='images/src/portrait/portrait.jpg' srcset='images/src/portrait/portrait@2x.jpg 2x' alt='Portrait' >
+</picture>
