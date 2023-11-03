@@ -13065,6 +13065,10 @@ textarea.form-control-lg {
     font-family: "Inter var", sans-serif;
   }
 }
+.responsive-indicator {
+  display: none;
+}
+
 body {
   font-size: calc(18px + 0.4vw);
   font-family: "Inter var";
