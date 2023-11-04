@@ -13119,7 +13119,11 @@ a:link:hover, a:visited:hover {
   text-decoration: underline;
 }
 
-picture img {
+.img, picture {
+  margin-top: 2em;
+}
+.img img, picture img {
+  border-radius: 8px;
   width: 100%;
 }
 
@@ -13287,7 +13291,6 @@ figcaption {
     margin: 0 auto;
     margin-top: 1em;
     margin-bottom: 8em;
-    max-width: 800px;
   }
   .app-container main .content .pub-date {
     font-family: "Inter var";
@@ -13311,13 +13314,6 @@ footer {
   font-size: calc(10px + 0.5vw);
   font-weight: 600;
   opacity: 50%;
-}
-
-.img {
-  margin-top: 2em;
-}
-.img img {
-  border-radius: 8px;
 }
 
 .intro {

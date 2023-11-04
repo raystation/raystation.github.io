@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Minecraft
 layout: app-main.html
 ---
 

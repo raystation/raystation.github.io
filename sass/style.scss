@@ -75,9 +75,11 @@ a:link, a:visited {
     text-decoration: underline;
   }
 }
-
-picture {
+.img, picture {
+  // margin-bottom: 2em;
+  margin-top: 2em;
   img {
+    border-radius: 8px;
     width: 100%;
   }
 }
@@ -244,7 +246,7 @@ figcaption {
         margin: 0 auto;
         margin-top: 1em;
         margin-bottom: 8em;
-        max-width: 800px;
+        // max-width: 1500px;
         .pub-date {
           font-family: $font-sans-serif;
         }
@@ -273,14 +275,6 @@ footer {
   font-size: calc(10px + 0.5vw);
   font-weight: 600;
   opacity: 50%;
-}
-
-.img {
-  // margin-bottom: 2em;
-  margin-top: 2em;
-  img {
-    border-radius: 8px;
-  }
 }
 
 .intro {
