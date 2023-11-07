@@ -95,9 +95,7 @@ hr {
 .viz {
   border: 1px solid red;
 }
-figcaption {
-  margin-bottom: 0.75em;
-}
+
 .app-container {
   display: flex;
   flex-direction: column-reverse;
@@ -270,11 +268,12 @@ footer {
 }
 
 
-.caption {
+.caption, figcaption {
   font-family: $system-fonts;
   font-size: calc(10px + 0.5vw);
-  font-weight: 600;
-  opacity: 50%;
+  font-weight: 500;
+  opacity: 80%;
+  margin: 0.5em 0 1.2em;
 }
 
 .intro {
