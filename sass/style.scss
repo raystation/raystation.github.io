@@ -30,6 +30,7 @@ $font-serif: "Georgia", "Times New Roman", "Baskerville", "Palatino", "Palatino 
 $font-sans-serif: 'Inter var';
 $headline-font: $font-sans-serif;
 $body-font: $font-sans-serif;
+$body-font: $system-fonts;
 
 // ========================
 // SIZES
@@ -77,8 +78,9 @@ a:link, a:visited {
 }
 .img, picture {
   // margin-bottom: 2em;
-  margin-top: 2em;
+  // margin-top: 2em;
   img {
+    margin-top: 1em;
     border-radius: 8px;
     width: 100%;
   }
@@ -114,7 +116,9 @@ hr {
     background-color: darken($background-color,2);
     padding: 1em;
     a:link, a:visited {
-      font-size: 16px;
+      // font-size: 16px;
+      font-size: calc(16px + 0.45vw);
+      line-height: 1.5em;
       text-decoration: none;
       font-weight: 500;
       color: $link-color;
@@ -142,7 +146,7 @@ hr {
         }
       }
     }
-    i { font-size: 90%; }
+    // i { font-size: 90%; }
     .nav-items {
       display: flex;
       justify-content: space-between;
@@ -202,8 +206,19 @@ hr {
 
 .portrait img {
   @media only screen and (min-width : $break-md) { 
-    width: 60%;
+    // width: 80%;
     // border: 1px solid pink;
+  }
+}
+
+ul.current-media {
+  list-style-type: none;
+  margin-left: 0px;
+  padding: 0;
+  font-size: 80%;
+  li {
+    margin: 0;
+    padding: 0;
   }
 }
 

@@ -7,26 +7,31 @@ layout: app-main.html
 Designer & Illustrator</h1>
 
 ## Currently
-- Building an <a href='https://promptdesignart.etsy.com' target='_blank'>Etsy biz</a> with AI generated art.
-- Helping a friend with her <a href='https://www.adelle.ink' target='_blank'>live painting</a> business and website.
-- Learning conversational Cantonese.
-- Rereading One Piece manga from the start.
-- Growing lemon trees and propagating monstera plants.
+- Building an <a href='https://promptdesignart.etsy.com' target='_blank'>Etsy biz</a> with AI generated art
+- Helping a friend with her <a href='https://www.adelle.ink' target='_blank'>live painting</a> business and website
+- Learning conversational Cantonese
+- Growing lemon trees and propagating monstera plants
+
+<ul class='current-media'>
+	<li>🎮 <a href='/media/dave-diver'>Dave the Diver</a>
+	<li>🎧 Video Game Instrumentals
+	<li>📺 Loki S3
+</ul>
 
 ## Past
 - Participated in <a href='inktober-2023'>Inktober</a>! 
-- Went to NOLA in April, NYC in June.
-- Illustrated 2 children's books, Tiger Tiger and <a href="https://rayuen.com/v1/monkey-mo" target='_blank'>Monkey Mo</a>.
-- Drew caricatures at Six Flags Great Adventure.
+- Went to NOLA in April, NYC in June
+- Illustrated 2 children's books, Tiger Tiger and <a href="https://rayuen.com/v1/monkey-mo" target='_blank'>Monkey Mo</a>
+- Drew caricatures at Six Flags Great Adventure
 - Made <a href='http://darth-pickle.nfshost.com/' target='_blank'>Darth Pickle</a>, where I host code projects
-- Studied Graphic Design at Rochester Institute of Technology.
-- Grew up in NJ, lived in Rochester and Brooklyn.
-- Can solve a Rubik's Cube >1m.
-- Pandemic hobby: sewing pouches.
+- Studied Graphic Design at Rochester Institute of Technology
+- Grew up in NJ, lived in Rochester and Brooklyn
+- Can solve a Rubik's Cube >1m
+- Pandemic hobby: sewing pouches
 
 <p class='caption'>Updated: Nov 2023</p>
 
 <picture class='portrait'>
-	<source srcset='images/src/portrait/portrait@3x.webp 3x' type='image/webp' media='(min-width: 1200px)'>
-	<img src='images/src/portrait/portrait.jpg' srcset='images/src/portrait/portrait@2x.jpg 2x' alt='Portrait' >
+	<!-- <source srcset='images/src/portrait/portrait@3x.webp 3x' type='image/webp' media='(min-width: 1200px)'> -->
+	<img src='images/src/portrait/self-portrait.jpg' srcset='images/src/portrait/self-portrait@2x.jpg 2x' alt='Portrait' >
 </picture>
