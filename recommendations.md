@@ -9,7 +9,7 @@ layout: app-main.html
 {%- endfor -%}
 </ul>
 
-## Best of the Year
+## Best of 2023
 <ul>
 {%- for post in collections.top2023 -%}
 	<li><a href='{{ post.url }}'>{{ post.data.title }}</a>

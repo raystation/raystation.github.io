@@ -1,7 +1,8 @@
 ---
 title: Dave the Diver
-tags: [gaming, currently]
+tags: [gaming, currently, top2023, recs]
 date: 2023-11-08
+category: "🎮"
 backlink: gaming
 ---
 

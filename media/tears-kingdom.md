@@ -2,6 +2,7 @@
 title: Tears of the Kingdom
 tags: [gaming, currently, top2023]
 date: 2023-11-04
+category: "🎮"
 backlink: gaming
 ---
 

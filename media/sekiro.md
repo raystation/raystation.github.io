@@ -2,6 +2,7 @@
 title: Sekiro
 tags: [gaming, top2023]
 date: 2023-11-04
+category: "🎮"
 backlink: gaming
 ---
 
