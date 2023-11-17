@@ -6,22 +6,11 @@ layout: app-main.html
 # Photography
 
 <p class='intro'>
-  Some photos taken on my X-100 around SF.
+  A collection of photos taken on my X-100.
 </p>
 
-<div class='img'>
-  <img class='img-fluid' src='/images/photos/X100-2018/2018-02-24-molinari.jpg' srcset='/images/photos/X100-2018/2018-02-24-molinari@2x.jpg 2x' alt=''>
-</div>
-
-<div class='img'>
-  <img class='img-fluid' src='/images/photos/X100-2018/2018-04-08-lombard.jpg' srcset='/images/photos/X100-2018/2018-04-08-lombard@2x.jpg 2x' alt=''>
-</div>
-
-<div class='img'>
-  <img class='img-fluid' src='/images/photos/X100-2018/2018-04-14-twin-peaks.jpg' srcset='/images/photos/X100-2018/2018-04-14-twin-peaks@2x.jpg 2x' alt=''>
-</div>
-
-<div class='img'>
-  <img class='img-fluid' src='/images/photos/X100-2018/2018-03-27-f-market.jpg' srcset='/images/photos/X100-2018/2018-03-27-f-market@2x.jpg 2x' alt=''>
-</div>
-
+<ul>
+  {%- for post in collections.photography -%}
+  <li><a href='{{ post.url }}'>{{ post.data.title }}</a>
+  {%- endfor -%}
+</ul>

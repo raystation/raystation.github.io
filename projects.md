@@ -4,8 +4,8 @@ layout: app-main.html
 ---
 
 # Projects
-
-- [Inktober 2023](/inktober-2023)
-
-
-
+<ul>
+  {%- for post in collections.projects -%}
+  <li><a href='{{ post.url }}'>{{ post.data.title }}</a>
+  {%- endfor -%}
+</ul>
