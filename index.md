@@ -15,7 +15,9 @@ Designer & Illustrator</h1>
 <ul class='current-media'>
 	<li>🎮 <a href='/media/dave-diver'>Dave the Diver</a>
 	<li>🎧 Video Game Instrumentals
-	<li>📺 Loki S3
+	<li>📺 Party Down s3
+	<li>📺 Fired on Mars
+	<li>📚 Mob Psycho 100
 </ul>
 
 ## Past
@@ -29,7 +31,7 @@ Designer & Illustrator</h1>
 - Can solve a Rubik's Cube >1m
 - Pandemic hobby: sewing pouches
 
-<p class='caption'>Updated: Nov 2023</p>
+<p class='caption'>Updated: Dec 2023</p>
 
 <picture class='portrait'>
 	<!-- <source srcset='images/src/portrait/portrait@3x.webp 3x' type='image/webp' media='(min-width: 1200px)'> -->
