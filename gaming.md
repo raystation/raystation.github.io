@@ -22,10 +22,6 @@ layout: app-main.html
 
 
 ## Previously
-<!-- - [Minecraft](minecraft)
-- Animal Crossing: New Horizons
-- [Elden Ring](elden-ring)
-- [Sekiro](sekiro) -->
 <ul>
 {% for post in collections.media %}
   {% assign hasCurrentlyTag = false %}

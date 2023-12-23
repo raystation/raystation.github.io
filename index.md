@@ -7,16 +7,18 @@ layout: app-main.html
 Designer & Illustrator</h1>
 
 ## Currently
+- Constructing <a href='nyt-connections'>Connections</a> puzzles
+- Playing around with PICO-8
 - Building an <a href='https://promptdesignart.etsy.com' target='_blank'>Etsy biz</a> with AI generated art
 - Helping a friend with her <a href='https://www.adelle.ink' target='_blank'>live painting</a> business and website
 - Learning conversational Cantonese
 - Growing lemon trees and propagating monstera plants
 
 <ul class='current-media'>
-	<li>🎮 <a href='/media/dave-diver'>Dave the Diver</a>
+	<li>🎮 Dicey Dungeons
+	<li>🎮 Connections
 	<li>🎧 Video Game Instrumentals
-	<li>📺 Party Down s3
-	<li>📺 Fired on Mars
+	<li>📺 Julia!
 	<li>📚 Mob Psycho 100
 </ul>
 

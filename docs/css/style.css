@@ -13288,6 +13288,7 @@ ul.current-media li {
     margin: 0 auto;
     margin-top: 1em;
     margin-bottom: 8em;
+    max-width: 1200px;
   }
   .app-container main .content .pub-date {
     font-family: "Inter var";
@@ -13317,7 +13318,7 @@ footer {
 .intro {
   font-size: calc(22px + 0.5vw);
   margin-bottom: 1.25em;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.015em;
   line-height: 1.25em;
 }
 
